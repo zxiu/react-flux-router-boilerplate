@@ -14,7 +14,7 @@ var Navbar = React.createClass({
 
   render() {
     return (
-      <nav className="navbar navbar-inverse">
+      <nav className="navbar fixed-bottom navbar-dark bg-inverse">
         {Link({
           style: {
             marginRight: '30px'
@@ -23,19 +23,24 @@ var Navbar = React.createClass({
           to: '/'
         }, 'Welcome')}
         <ul className="nav navbar-nav">
-          <li className={this._checkUri('')}>
+          <li className={this._checkUri('') + ' nav-item'}>
             {Link({
-              to: '/'
-            }, 'Home')}
+              to: '/',
+              className: 'nav-link'
+            },
+
+            'Home')}
           </li>
-          <li className={this._checkUri('libraries')}>
+          <li className={this._checkUri('libraries') + ' nav-item'}>
             {Link({
-              to: '/libraries'
+              to: '/libraries',
+              className: 'nav-link'
             }, 'Libraries')}
           </li>
-          <li className={this._checkUri('todo')}>
+          <li className={this._checkUri('todo') + ' nav-item'}>
             {Link({
-              to: '/todo'
+              to: '/todo',
+              className: 'nav-link'
             }, 'To Do Application')}
           </li>
         </ul>
