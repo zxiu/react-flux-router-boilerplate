@@ -1,5 +1,5 @@
 # React, Flux with Router Boilerplate
-
+Going to change the Bootstrap from 3 to 4
 [react-flux-router-boilerplate](https://github.com/apzentral/react-flux-router-boilerplate)
 A boilerplate for a full React, Flux and Router application development.
 
