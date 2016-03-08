@@ -4,7 +4,7 @@
 
 'use strict';
 
-var keyMirror = require('keyMirror');
+var keyMirror = require('react/lib/keyMirror');
 
 module.exports = keyMirror({
 
